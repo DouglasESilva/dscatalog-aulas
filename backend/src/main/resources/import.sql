@@ -1,3 +1,3 @@
-INSERT INTO CATEGORY(name) VALUES ('Books')
-INSERT INTO CATEGORY(name) VALUES ('Electronics')
-INSERT INTO CATEGORY(name) VALUES ('Computers')
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Books', NOW())
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Electronics', NOW())
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Computers', NOW())

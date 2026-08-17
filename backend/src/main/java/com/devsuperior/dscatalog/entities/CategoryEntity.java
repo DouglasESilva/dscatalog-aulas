@@ -3,6 +3,7 @@ package com.devsuperior.dscatalog.entities;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.Objects;
 
 @Entity
@@ -15,8 +16,13 @@ public class CategoryEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
     private String name;
+
+    @Column
+    private Instant createdAT;
+
+    @Column
+    private Instant updateAT;
 
     public CategoryEntity() {
 
@@ -41,6 +47,24 @@ public class CategoryEntity implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Instant getCreatedAT() {
+        return createdAT;
+    }
+
+    public Instant getUpdateAT() {
+        return updateAT;
+    }
+
+    @PrePersist
+    public void prePersist() {
+        createdAT = Instant.now();
+    }
+
+    @PreUpdate
+    public void preUpdate() {
+        updateAT = Instant.now();
     }
 
     @Override
