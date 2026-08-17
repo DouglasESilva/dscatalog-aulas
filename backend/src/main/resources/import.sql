@@ -1,3 +1,43 @@
 INSERT INTO CATEGORY(name, createdAt) VALUES ('Books', NOW())
 INSERT INTO CATEGORY(name, createdAt) VALUES ('Electronics', NOW())
 INSERT INTO CATEGORY(name, createdAt) VALUES ('Computers', NOW())
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Smartphones', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Tablets', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Televisions', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Cameras', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Headphones', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Speakers', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Printers', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Monitors', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Keyboards', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Mice', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Gaming', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Software', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Networking', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Accessories', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Furniture', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Home Appliances', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Kitchen', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Clothing', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Shoes', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Sports', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Fitness', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Beauty', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Health', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Toys', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Games', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Music', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Movies', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Office Supplies', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('School Supplies', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Automotive', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Tools', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Garden', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Pet Supplies', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Food', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Beverages', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Jewelry', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Watches', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Travel', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Outdoor', NOW());
+INSERT INTO CATEGORY(name, createdAt) VALUES ('Books & Magazines', NOW());

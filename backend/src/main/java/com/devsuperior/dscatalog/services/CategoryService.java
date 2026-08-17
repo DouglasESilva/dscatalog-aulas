@@ -7,6 +7,8 @@ import com.devsuperior.dscatalog.services.exceptions.DatabaseException;
 import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,9 +26,9 @@ public class CategoryService {
     }
 
     @Transactional(readOnly = true)
-    public List<CategoryDTO> findAll() {
-        List<CategoryEntity> entities = categoryRepository.findAll();
-       return entities.stream().map(CategoryDTO::new).toList();
+    public Page<CategoryDTO> findAllPaged(PageRequest pageRequest) {
+        Page<CategoryEntity> entities = categoryRepository.findAll(pageRequest);
+       return entities.map(CategoryDTO::new);
     }
 
     @Transactional(readOnly = true)
@@ -69,4 +71,5 @@ public class CategoryService {
             throw new DatabaseException("Falha de integridade referencial");
         }
     }
+
 }
