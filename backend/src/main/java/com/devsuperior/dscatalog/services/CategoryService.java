@@ -28,7 +28,7 @@ public class CategoryService {
     @Transactional(readOnly = true)
     public Page<CategoryDTO> findAllPaged(PageRequest pageRequest) {
         Page<CategoryEntity> entities = categoryRepository.findAll(pageRequest);
-       return entities.map(CategoryDTO::new);
+        return entities.map(CategoryDTO::new);
     }
 
     @Transactional(readOnly = true)
